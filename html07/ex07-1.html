@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <style rel="stylesheet" type="text/css">
+        #target {
+            width: 300px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function() {
+
+
+            var body = document.querySelector('body');
+            var target = document.querySelector('#target');
+
+
+            /* 출력메세지 함수*/
+            function over() {
+                console.log('바디monse over');
+            }; /*지정한 타겟안에 마우스 포인터가 위치하면 수행*/
+            function out() {
+                console.log('바디monse out');
+            }; /*지정한 타겟에서 마우스 포인터가 이탈하면 수행*/
+
+
+            function tover() {
+                console.log('타겟monse over');
+            }; /*지정한 타겟안에 마우스 포인터가 위치하면 수행*/
+            function tout() {
+                console.log('타겟monse out');
+            }; /*지정한 타겟에서 마우스 포인터가 이탈하면 수행*/
+
+//
+//
+//
+//            body.onmouseover = over;
+//            body.onmouseout = out;
+//            target.onmouseover = tover;
+//            target.onmouseout = tout;
+            /*타겟위에 있으면 바디 아웃되고 다시 바디 오버가 된다. */
+//
+
+            body.onmouseenter = over;
+            body.onmouseleave = out;
+            target.onmouseenter = tover;
+            target.onmouseleave = tout;
+            /*타겟위에잇어도 바디아웃이 작동하지않음*/
+
+
+            //            
+            //            
+            //                /*아래 두 함수는 위 두 함수와 같은역할*/
+            //            target.onmouseenter = function() {
+            //                console.log('enter');
+            //
+            //            };
+            //            target.onmouseleave = function() {
+            //                console.log('leave');
+            //            };
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>mouse motion event</h1>
+    <div id="target"></div>
+
+</body></html>

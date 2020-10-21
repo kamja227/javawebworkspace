@@ -1,0 +1,40 @@
+package com.bit.controller;
+
+import java.io.IOException;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.bit.model.StudentDao;
+
+@WebServlet("/findid.bit")
+public class FindIdController extends HttpServlet {
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		String userName = req.getParameter("name");
+		String contact = req.getParameter("contact");
+		
+		StudentDao dao;
+		try {
+			dao = new StudentDao();
+			String userId = dao.findUserId(userName, contact);
+			if(userId != null && userId != "") {
+				
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

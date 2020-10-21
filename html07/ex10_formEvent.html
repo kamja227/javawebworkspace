@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    
+    <style rel="stylesheet" type="text/css">
+        .err{
+            color: red;
+        }
+    
+    </style>
+    
+    
+    <script type="text/javascript">
+        var btns;
+        var form,sel,rg,ta;
+
+
+
+        window.onload = function() {/*id나 태그 이름으로 앨리먼트를 가져옴 */
+            id = document.querySelector('#id');
+            pw = document.querySelector('#pw');
+            btns = document.querySelectorAll('button');
+            sel = document.querySelector('select');
+            rg = document.querySelector('#rg');
+            ta = document.querySelector('#ta');
+            
+            ta.onclick=function(){
+                ta.innerText='';
+                /*
+                텕스트 에어리를 클릭하는 이벤트가 발생하면 
+                텍스트에어리어에 입력하세요라는 글자를 지운다*/
+            };
+            
+            
+            
+            sel.onclick=function(){
+                sel.removeChild(sel.firstElementChild);
+           /*선택하세요라는 첫번째 옵션 지움. select의 첫번째 자식=첫option 지움*/
+                sel.innerHTML='<option value="">item1</option><option value="">item2</option><option value="">item3</option><option value="">item4</option>';
+            
+            };
+
+
+            sel.onchange=function(){/*select의 옵션을 누르는 이벤트 받으면 콘솔에 출력*/
+                console.log('상태변화onchange');
+            };
+            
+            rg.onchange=function(){/*range태그의 상태가 변하면 이벤트처리함*/
+                console.log('rg Change');
+                rg.previousElementSibling.innerText='rg:'+rg.value;
+                /*range태그 바로앞 label태그를 의미함
+                라벨태그의 innerText로 현재 range값을 화면에 표시
+                */
+            };
+            
+            
+            /*btns[0].onclick = function(e) {
+                전송버튼을 누르면 출력 다이얼로그 뜸
+                alert('출력');
+                //                        e.returnValue = false;
+            };
+*/
+            form = document.querySelector('form');
+            form.onsubmit = function() { //submit을 눌러도 쿼리문을 받은 페이지로 이동하지않음
+                //원래는 주소끝에 ?가 생겨야함
+
+                //                if (id.value.trim() != 'AAA') return false;
+                //form태그에서 validation을 처리하면 서버에 요청을 보내기전에
+                //브라우저에서 전송자체가 차단되고, textfield에는 이전에 입력한 문자가 남는다.
+
+                var errs = document.querySelectorAll('.err');
+                /*class명 err인 span태그를 가져옴
+                
+                id와 pw, 두 개가 존재. errs[0]은 id에 있는 span태그
+                                    err[1]은 pw에 있는 span태그
+                */
+                for (var i = 0; i < errs.length; i++) {
+                    errs[i].innerText = '';
+
+                }
+
+
+                if (id.value.trim() == '') {//아이디 입력 안한 경우
+                    errs[0].innerText = 'id는 필수';/*id의 span태그에 텍스트 입력함
+                    브라우저에 id는 필수라는 메세지가 출력된다.*/
+                    return false;
+                    
+                    /*return false하면 onsubmit이벤트가 끝나고 입력되어있는 값들은
+                    전송하지 않는다. */
+                }//if
+                if (pw.value.trim() == '') {//비밀번호 입력안한 경우
+                    errs[1].innerText='비밀번호입력하세요';
+                    /*pw에 있는 span태그에 메세지 출력함, 브라우저에서 보인다.*/
+                    return false;
+                }//if
+                if (pw.value.trim().length < 4 || pw.value.trim().length > 6) {
+                    errs[1].innerText='비밀번호자리수';
+                    
+                    return false;
+                }//if
+
+                var msg = "AZaz@!#09"
+                var A = msg.charCodeAt(0); //문자를 코드로 바꿔줌.65 
+                var Z = msg.charCodeAt(1); //90
+                var a = msg.charCodeAt(2); //97
+                var z = msg.charCodeAt(3); //122
+                var su0 = msg.charCodeAt(7);
+                var su9 = msg.charCodeAt(8);
+                var ch1 = true;
+                var ch2 = true;
+                var ch3 = true;
+                //asdf1111
+                for (var i = 0; i < pw.value.length; i++) {
+                    var su = pw.value.charCodeAt(i);
+                    if (su >= A && su <= Z || su >= a && su <= z) {
+                        ch1 = false;
+                        //영문인지 검사
+                    } else if (su == msg.charCodeAt(4) || su == msg.charCodeAt(5) || su == msg.charCodeAt(6)) {
+                        ch2 = false;
+                        //지정한 특수문자만 사용했는지 검사
+                    } else if (su >= su0 && su <= su9) {
+                        ch3 = false;
+                        //문자가 0~9사이 숫자에 해당하는지.
+                    }
+                    //                    if(ch1&&ch2&&ch3) break;
+                    /**/
+                }
+                
+                /*영문자, 숫자, 위에서정한 특수문자가 반드시 1개 이상 있어야지만
+                ch1 ch2 ch3이 모두 false가 되기때문에 
+                아래 if문을 지나서 return true가 된다. 
+                조합이 맞지않으면 체크1~3중에 하나 또는 그 이상이 true로 남아있어서
+                아래 if문을 수행하게 되고 return false로 form태그의 value들을
+                submit하지 않게 된다. 전송안함*/
+                
+                if (ch1 || ch2 || ch3) {
+                    errs[1].innerText = '영문 숫자 특수문자 조합으로';
+                    console.log('영문 숫자 특수문자 조합으로')
+                    
+                    return false;
+                    //ch1,2,3이 모두 false로 바뀌어 있어야 영문,숫자, 특수문자 조합이다. 
+                }
+                return true;
+            };//onsubmit event
+
+        };//onload
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <h1>event</h1>
+    <form>
+        <div>
+            <lavel for=id>id</lavel>
+            <input type="text" id="id" />
+            <span class="err"></span>
+        </div>
+
+        <div>
+            <lavel for=pw>pw</lavel>
+            <input type="password" id="pw" />
+            <span class="err"></span>
+        </div>
+
+        <div>
+            <lavel for=rg>rg:0 </lavel>
+            <input type="range" id="rg" max="50" min="0" />
+            
+        </div>
+
+        <div>
+            <lavel for=ra>ra</lavel>
+            <input type="radio" class="ra" />
+            <input type="radio" class="ra" />
+            <input type="radio" class="ra" />
+            <input type="radio" class="ra" />
+            <input type="radio" class="ra" />
+        </div>
+        <div>
+            <lavel for=se>se</lavel>
+            <select name="" id="">
+                <option value="">선택하세요</option>
+                <option value="">item1</option>
+                <option value="">item2</option>
+                <option value="">item3</option>
+                <option value="">item4</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="" id="ta" cols="30" rows="3">입력하세요.</textarea>
+        </div>
+        <div>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+            <button type="button">button</button>
+
+        </div>
+    </form>
+</body></html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style rel="stylesheet" type="text/css">
+        div {
+            border: 1px solid;
+            width: 300px;
+            height: 300px;
+        }
+
+        div>div {
+
+            background-color: azure;
+            border: 1px solid;
+            height: 200px;
+            width: 200px;
+        }
+
+        div>div>div {
+            background-color: antiquewhite;
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var box1, box2, box3;
+        window.onload = function() {
+
+            box1 = document.querySelector('body>div');
+            box2 = document.querySelector('body>div>div');
+            box3 = document.querySelector('body>div>div>div');
+/*
+            box1.ondblclick = function() {
+                console.log('box1 click');
+            };
+            box2.ondblclick = function() {
+                console.log('box2 click2222');
+            };
+            box3.ondblclick = function(e) {
+                console.log('box3 click333333333333');
+                e.stopPropagation();
+                이벤트 전파를 차단하는 메서드
+
+            };*/
+
+            /*세번째 paracmeter는 capturing 수행여부*/    
+            box1.addEventListener('click', function(e){
+                console.log('box1111');
+                
+            }, true );
+            
+            box2.addEventListener('click', function(e){
+                
+                console.log('box222222222');
+                
+            }, true);
+            box3.addEventListener('click', function(e){
+                
+                console.log('box3333333333333333333');
+                
+            }, true);
+
+
+
+        } //onload
+    </script>
+    <title> Title </title>
+</head>
+
+<body>
+
+    <h1>이벤트 버블링과 캡쳐링</h1>
+    <p>캡처링 - window 로부터 이벤트가 발생한 요소까지 이벤트를 전파한다.
+    </p>
+    <p>버블링 - 이벤트가 발생한 요소부터 window 까지 이벤트를 전파한다.</p>
+
+    <p>
+        box3을 클릭하면 클릭이벤트가 box2 > box1
+        그리고 body > html > document > window 순으로 전파된다.<br/>
+        이벤트 전파의 버블링방식은 default이다. 캡쳐링은
+        이와 반대방향으로 이벤트가 전파되는 것
+    </p>
+    <div>
+        box1
+        <div>
+            box2
+            <div> box3</div>
+
+        </div>
+    </div>
+
+
+</body></html>

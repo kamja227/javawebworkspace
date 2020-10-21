@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+<script type="text/javascript">
+    
+    console.log("a");
+    
+    var target;
+    function print(){
+        var time=new Date();
+        console.log("start");
+        console.log(time.getMinutes()+'분'+time.getSeconds()+'초');
+        target=setTimeout(print, 500);
+    }
+    
+    console.log("b");
+    
+    print();
+    
+    console.log("c");
+    
+    setTimeout(function(){
+        console.log("end1");
+        clearTimeout(target);
+        console.log("end2");
+    }, 5000);
+    
+//    function clear(){
+//        console.log("end1");
+//        clearTimeout(target);
+//        console.log("end2");
+//    }
+    
+//    setTimeout(clear, 5000);
+    
+    console.log("d");
+    
+    
+</script>
+</head>
+
+	<body>
+
+</body>
+</html>
+
+

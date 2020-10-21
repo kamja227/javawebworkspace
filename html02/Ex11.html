@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style rel="stylesheet" type="text/css">
+            body{margin: 0px;}
+            h1{background-color: aqua;}
+            h1~p{
+                margin: 0px;
+                margin-top: 0px;
+                width: 200px;
+                height: 100px;
+                background-color: darkgray;
+            }
+/*
+            div{
+                background-color: chartreuse;
+                height: 150px;
+            }
+*/
+            h1+p{
+                margin: 50px;
+                border-width: 50px;
+                border-color: fuchsia;
+                border-style: ridge;
+            }
+            table,th,td{
+                border-collapse: collapse;
+                border-right-width: thin;
+                border-color: red;
+                border-style: outset;
+            }
+            
+/*
+            h1{color: rgb(255,0.0)}
+            h1+p{font-size: 32pt;} px, pt차이
+            div>p{font-size: 32px;}
+            h1+p{font-family: "궁서체"; text-align: right;}
+            h1+p+p{
+                font-style: italic;
+                font-weight: bold;
+            }
+            h1{text-align: center;}
+            h2+p+p{text-indent: 50px;}
+            tr>td+td{text-decoration: underline}
+*/
+        </style>
+    </head>
+    <body>
+        <h1>속성</h1>
+        <p>32pt</p>
+        <div>box</div>
+        <div>
+            <h2>제목1</h2>
+            <h2>제목2</h2>
+            <p>32px</p>
+            <p>내용2</p>
+        </div>
+        <table>
+            <tr>
+                <td>col1</td>    
+                <td>col2</td>    
+                <td>col3</td>    
+                <td>col4</td>    
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        
+        </table>
+    </body>
+
+
+</html>

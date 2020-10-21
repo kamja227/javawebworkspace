@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+<script type="text/javascript">
+    window.console.log('출력');
+//    window.alert('알림');
+    
+    var return1=window.confirm('확인'); // 확인 누르면 true
+//    console.log(typeof return1); // boolean
+    console.log(return1);
+    
+    /*입력 받는 창*/
+    var msg=window.prompt("메시지를 입력하세요",'default값');
+    console.log(msg);
+    //////////////////
+    var cnt=0;
+    var callback=function(){
+        console.log('callback...'+(++cnt));
+    };
+    var target=window.setTimeout(callback,1000); // 1초 뒤 한번만 실행 됨
+//    var target=window.setInterval(callback,1000); // 비권장
+    /*5초 뒤 clear*/
+    var target2=window.setTimeout(function(){
+        window.clearInterval(target);
+    },5000);
+    window.clearTimeout(target2);
+    
+</script>
+    
+</head>
+
+	<body>
+
+</body>
+</html>

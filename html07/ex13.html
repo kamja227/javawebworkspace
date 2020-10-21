@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+
+    <script type="text/javascript">
+        var form;
+        window.onload = function() {
+
+
+            form = document.querySelector('form');
+
+            form.addEventListener('submit', function(e) {
+                //return false;
+                /*false 반환은 레벨2에서 가능하다.
+                레벨2는 submit메서드로 실행하기때문에 서브밋자체를 false리턴으로
+                취소지만
+                레벨3의 경우는 parameter로 들어가는 익명함수가 취소되는 것이다. 
+                */
+                e.preventDefault();
+                console.log(e);
+                alert('이벤트 진행');
+
+            });
+
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <form action="ex12.html">
+
+        <button type="submit">전송</button>
+
+    </form>
+
+
+</body></html>

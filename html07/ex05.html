@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <script type="text/javascript">
+        function func() {
+
+            console.log('로딩됨');
+            var h1 = document.querySelector('h1');
+            console.log(h1);
+        }
+        window.onload = func; /*페이지가 로딩되는 시점에 func호출*/
+
+
+
+        window.onbeforeunload = function(e) {
+            e.returnValue = "sadfsa"; /**/
+            alert('data...');
+            console.log('safdsaf');
+        };
+        //        window.onloadeddata = function(e) {
+        //            alert('data...');
+        //            console.log('data...');
+        //        };
+
+    </script>
+
+</head>
+
+<body>
+    <h1>event DOM Level2</h1>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+package com.bit.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.bit.model.RecruitmentBoardDao;
+import com.bit.model.RecruitmentBoardDto;
+import com.bit.model.ResumeDao;
+
+@WebServlet("/recruitdetail.bit")
+public class RecruitDetail extends HttpServlet {
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		int recruitmentboardIdx = Integer.parseInt(req.getParameter("recruitmentboardIdx"));
+		RecruitmentBoardDao dao = new RecruitmentBoardDao();
+		RecruitmentBoardDto bean = dao.selectOne(recruitmentboardIdx);
+		req.setAttribute("bean", bean);
+
+		req.getRequestDispatcher("recruitdetail.jsp").forward(req, resp);
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		
+		ResumeDao dao = new ResumeDao();
+	}
+}

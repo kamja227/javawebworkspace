@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+</head>
+
+<body>
+    <!--
+  문자열제어. 
+  innertext는 태그가 적용이안됨.
+  
+    p.innerText="바꿈<br/>줄바꿈";
+    "바꿈<br/>줄바꿈"
+    
+    p.innerHTML='바꿈<br/>줄바꿈';
+    "바꿈
+    줄바꿈"
+   
+   
+   -->
+    <h1>노드생성</h1>
+    <p>내용</p>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+    <ol></ol>
+
+    <script type="text/javascript">
+        //        var lis = document.querySelectorAll('li');
+        var lis = document.getElementsByTagName('li');
+        var ul = document.getElementsByTagName('ul')[0];
+        var ol = document.getElementsByTagName('ol')[0];
+
+        //        lis.forEach(function(ele) {/*ul에 객체들을 ol로 옮김*/
+        //            ol.appendChild(ele);
+        //        });
+
+
+        /*위와 같이 ul의 객체들을 ol로 이동*/
+        while (ul.childElementCount) {
+            ol.appendChild(lis[0]);
+        }
+    </script>
+
+</body></html>

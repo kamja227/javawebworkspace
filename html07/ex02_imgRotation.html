@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <style rel="stylesheet" type="text/css">
+        img{
+            width: 200px;
+
+        }
+        ul, ol{
+            list-style: none;
+        }
+        #source{
+            
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>캐러셀</h1>
+    <div>
+        <ul></ul>
+
+    </div>
+    <div id="source">
+        <ol>
+            <li><img src="img/samsek1.jpg" alt=""></li>
+            <li><img src="img/samsek2.jpg" alt=""></li>
+            <li><img src="img/samsek3.jpg" alt=""></li>
+            <li><img src="img/samsek4.jpg" alt=""></li>
+            <li><img src="img/samsek5.jpg" alt=""></li>
+
+        </ol>
+    </div>
+
+
+<script type="text/javascript">
+    
+    var ol = document.querySelector('ol');
+    var ul= document.querySelector('ul');
+    add();
+    add();
+    
+//    ul.appendChild(ol.firstElementChild);
+    
+    setInterval(loop, 1000);
+    function loop(){
+        remove();
+        add();
+        
+        
+    }
+    /* 
+    #source를 Array 제어하듯이 제어하는 방법
+    */
+    
+    function add(){/*ol의 첫번째앨리먼트(li)를 가져와서 ul에 옮김*/
+        ul.appendChild(ol.firstElementChild);
+    }
+    function remove(){
+        ol.appendChild(ul.firstElementChild);/*ul에 있는 li하나를 ol젤 아래에 이동*/
+    }
+    
+    </script>
+    <!--
+    ol.innerHTML >>tag까지 전부 string으로 출력
+"
+        <li data-brackets-id="1211"><img data-brackets-id="1212" src="img/samsek4.jpg" alt=""></li><li data-brackets-id="1213"><img data-brackets-id="1214" src="img/samsek5.jpg" alt=""></li><li data-brackets-id="1205"><img data-brackets-id="1206" src="img/samsek1.jpg" alt=""></li>"
+    
+    ol.innerText는 문자만 출력
+    -->
+
+</body></html>

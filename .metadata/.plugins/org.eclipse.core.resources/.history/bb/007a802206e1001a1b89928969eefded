@@ -1,0 +1,41 @@
+package com.bit.controller.adminPage;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.bit.model.dao.StudentDao;
+import com.bit.model.dto.StudentDto;
+
+@WebServlet("/admin/addscoreclass.bit")
+public class AddScoreClassController extends HttpServlet {
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		int classIdx = Integer.parseInt(req.getParameter("classIdx"));
+		String classTitle = req.getParameter("classTitle");
+
+		StudentDao dao;
+		try {
+			dao = new StudentDao();
+			ArrayList<StudentDto> list = dao.classAll(classIdx);
+			
+			req.setAttribute("classIdx", classIdx);
+			req.setAttribute("classTitle", classTitle);
+			req.setAttribute("list", list);
+
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+		
+
+		req.getRequestDispatcher("../addattendanceinsert.jsp").forward(req, resp);
+	}
+}

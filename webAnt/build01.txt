@@ -1,0 +1,42 @@
+D:\webWorkspace\webAnt>ant
+Buildfile: D:\webWorkspace\webAnt\build.xml
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+D:\webWorkspace\webAnt>ant compile jar run
+Buildfile: D:\webWorkspace\webAnt\build.xml
+
+compile:
+    [javac] D:\webWorkspace\webAnt\build.xml:9: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+jar:
+
+run:
+     [java] HelloWorld
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+---------------------2------------------------------------
+D:\webWorkspace\webAnt>ant
+Buildfile: D:\webWorkspace\webAnt\build.xml
+
+clean:
+   [delete] Deleting directory D:\webWorkspace\webAnt\build
+
+compile:
+    [mkdir] Created dir: D:\webWorkspace\webAnt\build\classes
+    [javac] D:\webWorkspace\webAnt\build.xml:19: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to D:\webWorkspace\webAnt\build\classes
+
+jar:
+    [mkdir] Created dir: D:\webWorkspace\webAnt\build\jar
+      [jar] Building jar: D:\webWorkspace\webAnt\build\jar\HelloWorld.jar
+
+run:
+     [java] HelloWorld
+
+main:
+
+BUILD SUCCESSFUL

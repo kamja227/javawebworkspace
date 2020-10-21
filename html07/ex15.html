@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <style rel="stylesheet" type="text/css">
+        body>div {
+        }
+
+        body>div>ul {
+            text-align: center;
+            margin: 0px auto;
+          
+        }
+
+        body>div>ul>li {
+            margin: auto;
+            float: left;
+            list-style: none;
+            width: 100px;
+            height: 30px;
+            border: 1px solid;
+            
+            overflow: hidden;
+        }
+
+        body>div>ul>li>a {
+            margin: auto;
+            text-decoration: none;
+            display: block;
+            height: 30px;
+        }
+
+        body>div>ul>li>ol {
+            padding: 0px;
+
+        }
+
+        body>div>ul>li>ol>li {
+            text-align: center;
+            border: 1px solid;
+            height: 50px;
+            width: 80px;
+            margin: auto;
+            list-style: none;
+        }
+    </style>
+    <script type="text/javascript">
+    var menus;
+    
+    window.onload=function(){
+        menus = document.querySelectorAll('ul>li>a');
+        menus[0]=addEventListener('mouseover', function(e){
+            
+            menus[0].parentElement.style.overflow='visible';
+            
+        },true);
+        
+    
+        
+        
+    }//onload
+    
+    
+    
+    </script>
+
+</head>
+
+<body>
+
+    <div>
+        <ul>
+            <li><a href="#">menu</a>
+                <ol>
+                    <li>menu-1</li>
+                    <li>menu-2</li>
+                    <li>menu-3</li>
+                </ol>
+            </li>
+            <li><a href="#">menu</a>
+                <ol>
+                    <li>menu-1</li>
+                    <li>menu-2</li>
+                    <li>menu-3</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+
+
+</body></html>

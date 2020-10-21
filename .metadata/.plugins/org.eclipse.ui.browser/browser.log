@@ -1,0 +1,260 @@
+
+7월 30, 2020 14:55:37.18 NEW SESSION
+7월 30, 2020 14:55:37.18 
+7월 30, 2020 14:55:37.19 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+7월 30, 2020 14:55:37.19 
+7월 30, 2020 14:55:37.22 
+7월 30, 2020 14:55:37.22 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+7월 30, 2020 14:55:37.23 
+7월 30, 2020 15:02:17.47 
+7월 30, 2020 15:02:17.47 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+7월 30, 2020 15:02:17.48 
+7월 30, 2020 15:02:17.50 
+7월 30, 2020 15:02:17.51 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+7월 30, 2020 15:02:17.51 
+7월 30, 2020 15:02:46.18 
+7월 30, 2020 15:02:46.19 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+7월 30, 2020 15:02:46.20 
+7월 30, 2020 15:02:46.21 
+7월 30, 2020 15:02:46.22 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+7월 30, 2020 15:02:46.23 
+7월 30, 2020 15:06:14.59 
+7월 30, 2020 15:06:14.60 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+7월 30, 2020 15:06:14.60 
+7월 30, 2020 15:06:14.62 
+7월 30, 2020 15:06:14.62 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+7월 30, 2020 15:06:14.62 
+7월 30, 2020 17:57:34.76 
+7월 30, 2020 17:57:34.77 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+7월 30, 2020 17:57:34.77 
+7월 30, 2020 17:57:34.81 
+7월 30, 2020 17:57:34.81 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+7월 30, 2020 17:57:34.82 
+
+8월 03, 2020 10:23:27.62 NEW SESSION
+8월 03, 2020 10:23:27.62 
+8월 03, 2020 10:23:27.62 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 10:23:27.62 
+8월 03, 2020 10:23:27.63 
+8월 03, 2020 10:23:27.64 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 10:23:27.65 
+8월 03, 2020 10:23:27.65 
+8월 03, 2020 10:23:27.66 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 10:23:27.66 
+8월 03, 2020 10:42:05.90 
+8월 03, 2020 10:42:05.91 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 10:42:05.91 
+8월 03, 2020 10:42:05.92 
+8월 03, 2020 10:42:05.93 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 10:42:05.93 
+
+8월 03, 2020 11:52:10.97 NEW SESSION
+8월 03, 2020 11:52:10.97 
+8월 03, 2020 11:52:10.98 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 11:52:10.99 
+8월 03, 2020 11:52:10.99 
+8월 03, 2020 11:52:11.00 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 11:52:11.01 
+8월 03, 2020 11:52:11.01 
+8월 03, 2020 11:52:11.02 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 11:52:11.02 
+8월 03, 2020 13:23:01.72 
+8월 03, 2020 13:23:01.73 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 13:23:01.73 
+8월 03, 2020 13:23:01.74 
+8월 03, 2020 13:23:01.74 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 13:23:01.75 
+8월 03, 2020 13:23:01.76 
+8월 03, 2020 13:23:01.77 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 13:23:01.77 
+8월 03, 2020 15:32:26.99 
+8월 03, 2020 15:32:27.00 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 15:32:27.00 
+8월 03, 2020 15:32:27.03 
+8월 03, 2020 15:32:27.04 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 15:32:27.04 
+8월 03, 2020 16:55:41.61 
+8월 03, 2020 16:55:41.63 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 16:55:41.63 
+8월 03, 2020 16:55:41.65 
+8월 03, 2020 16:55:41.66 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 16:55:41.66 
+8월 03, 2020 16:56:28.87 
+8월 03, 2020 16:56:28.88 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 16:56:28.89 
+8월 03, 2020 16:56:28.89 
+8월 03, 2020 16:56:28.90 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 16:56:28.90 
+8월 03, 2020 16:56:28.91 
+8월 03, 2020 16:56:28.92 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 16:56:28.92 
+8월 03, 2020 16:58:39.71 
+8월 03, 2020 16:58:39.71 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 16:58:39.72 
+8월 03, 2020 16:58:39.74 
+8월 03, 2020 16:58:39.75 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 16:58:39.75 
+8월 03, 2020 17:00:43.06 
+8월 03, 2020 17:00:43.07 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:00:43.07 
+8월 03, 2020 17:00:43.10 
+8월 03, 2020 17:00:43.10 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 17:00:43.11 
+8월 03, 2020 17:01:09.30 
+8월 03, 2020 17:01:09.31 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:01:09.31 
+8월 03, 2020 17:01:09.32 
+8월 03, 2020 17:01:09.32 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:01:09.33 
+8월 03, 2020 17:01:09.34 
+8월 03, 2020 17:01:09.35 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 17:01:09.35 
+8월 03, 2020 17:03:48.67 
+8월 03, 2020 17:03:48.68 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:03:48.68 
+8월 03, 2020 17:03:48.69 
+8월 03, 2020 17:03:48.70 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:03:48.70 
+8월 03, 2020 17:03:48.71 
+8월 03, 2020 17:03:48.71 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 17:03:48.71 
+8월 03, 2020 17:04:24.47 
+8월 03, 2020 17:04:24.48 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:04:24.48 
+8월 03, 2020 17:04:24.49 
+8월 03, 2020 17:04:24.49 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:04:24.50 
+8월 03, 2020 17:04:24.51 
+8월 03, 2020 17:04:24.51 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 17:04:24.52 
+8월 03, 2020 17:13:46.53 
+8월 03, 2020 17:13:46.54 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:13:46.54 
+8월 03, 2020 17:13:46.54 
+8월 03, 2020 17:13:46.55 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:13:46.56 
+8월 03, 2020 17:13:46.56 
+8월 03, 2020 17:13:46.57 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 17:13:46.57 
+8월 03, 2020 17:49:32.96 
+8월 03, 2020 17:49:32.97 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:49:32.97 
+8월 03, 2020 17:49:32.98 
+8월 03, 2020 17:49:32.98 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:49:32.99 
+8월 03, 2020 17:49:33.00 
+8월 03, 2020 17:49:33.01 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 17:49:33.01 
+8월 03, 2020 17:49:44.13 
+8월 03, 2020 17:49:44.15 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:49:44.15 
+8월 03, 2020 17:49:44.15 
+8월 03, 2020 17:49:44.16 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 03, 2020 17:49:44.17 
+8월 03, 2020 17:49:44.18 
+8월 03, 2020 17:49:44.18 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 03, 2020 17:49:44.18 
+
+8월 10, 2020 17:23:58.54 NEW SESSION
+8월 10, 2020 17:23:58.54 
+8월 10, 2020 17:23:58.55 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 10, 2020 17:23:58.56 
+8월 10, 2020 17:23:58.58 
+8월 10, 2020 17:23:58.59 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 10, 2020 17:23:58.60 
+8월 10, 2020 17:29:19.30 
+8월 10, 2020 17:29:19.31 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 10, 2020 17:29:19.31 
+8월 10, 2020 17:29:19.35 
+8월 10, 2020 17:29:19.36 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 10, 2020 17:29:19.36 
+8월 10, 2020 17:31:50.56 
+8월 10, 2020 17:31:50.57 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 10, 2020 17:31:50.57 
+8월 10, 2020 17:31:50.59 
+8월 10, 2020 17:31:50.60 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 10, 2020 17:31:50.60 
+
+8월 10, 2020 20:27:12.91 NEW SESSION
+8월 10, 2020 20:27:12.91 
+8월 10, 2020 20:27:12.92 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 10, 2020 20:27:12.92 
+8월 10, 2020 20:27:12.93 
+8월 10, 2020 20:27:12.94 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 10, 2020 20:27:12.94 
+8월 10, 2020 20:33:03.14 
+8월 10, 2020 20:33:03.15 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 10, 2020 20:33:03.15 
+8월 10, 2020 20:40:18.78 
+8월 10, 2020 20:40:18.79 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 10, 2020 20:40:18.80 
+8월 10, 2020 20:40:18.81 
+8월 10, 2020 20:40:18.82 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 10, 2020 20:40:18.83 
+8월 10, 2020 20:42:40.31 
+8월 10, 2020 20:42:40.32 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 10, 2020 20:42:40.32 
+8월 10, 2020 20:42:40.34 
+8월 10, 2020 20:42:40.35 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 10, 2020 20:42:40.35 
+8월 10, 2020 20:45:25.74 
+8월 10, 2020 20:45:25.75 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 10, 2020 20:45:25.75 
+8월 10, 2020 20:45:25.77 
+8월 10, 2020 20:45:25.77 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 10, 2020 20:45:25.78 
+
+8월 11, 2020 10:08:47.53 NEW SESSION
+8월 11, 2020 10:08:47.53 [Parent 13788, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+8월 11, 2020 10:08:47.58 
+8월 11, 2020 10:08:47.59 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 11, 2020 10:08:47.60 
+8월 11, 2020 10:08:47.62 
+8월 11, 2020 10:08:47.63 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 11, 2020 10:08:47.64 
+8월 11, 2020 10:09:22.46 [Parent 8216, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+8월 11, 2020 10:09:22.57 
+8월 11, 2020 10:09:22.58 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 11, 2020 10:09:22.59 
+8월 11, 2020 10:09:22.61 
+8월 11, 2020 10:09:22.61 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 11, 2020 10:09:22.62 
+8월 11, 2020 10:17:13.37 
+8월 11, 2020 10:17:13.37 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 11, 2020 10:17:13.38 
+8월 11, 2020 10:17:13.41 
+8월 11, 2020 10:17:13.41 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 11, 2020 10:17:13.42 
+
+8월 11, 2020 11:04:56.14 NEW SESSION
+8월 11, 2020 11:04:56.14 [Parent 5040, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+8월 11, 2020 11:04:56.22 
+8월 11, 2020 11:04:56.22 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 11, 2020 11:04:56.23 
+8월 11, 2020 11:04:56.25 
+8월 11, 2020 11:04:56.26 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 11, 2020 11:04:56.26 
+8월 11, 2020 11:30:25.04 
+8월 11, 2020 11:30:25.05 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 11, 2020 11:30:25.05 
+8월 11, 2020 11:30:25.08 
+8월 11, 2020 11:30:25.09 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 11, 2020 11:30:25.09 
+8월 11, 2020 12:27:57.82 
+8월 11, 2020 12:27:57.83 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 11, 2020 12:27:57.84 
+8월 11, 2020 12:27:57.89 
+8월 11, 2020 12:27:57.90 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 11, 2020 12:27:57.91 
+8월 11, 2020 15:11:50.16 
+8월 11, 2020 15:11:50.17 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 11, 2020 15:11:50.18 
+8월 11, 2020 15:11:50.21 
+8월 11, 2020 15:11:50.22 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 11, 2020 15:11:50.22 
+8월 11, 2020 15:43:34.15 
+8월 11, 2020 15:43:34.16 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 11, 2020 15:43:34.16 
+8월 11, 2020 15:43:34.19 
+8월 11, 2020 15:43:34.20 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 11, 2020 15:43:34.21 

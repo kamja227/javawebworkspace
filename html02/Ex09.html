@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style rel="stylesheet" type="text/css">
+            input[type='text']{color: red;}
+            input[type^='n'] {color: aquamarine}
+            body{background: aquamarine}
+        
+        </style>
+    </head>
+    <body>
+        <h1>속성선택자</h1>
+        <form>
+            <div>
+                <label for="id">id</label>
+                <input type="text" id="id"/>
+            </div>
+            <div>
+                <label for="pw">pw</label>
+                <input type="text" id="pw"/>
+            </div>
+            <div>
+                <label for="name">name</label>
+                <input type="text" id="name"/>
+            </div>
+            <div>
+                emil: <input type="email"/><br/>
+                color: <input type="color"/><br/>
+                tel: <input type="tel" name="tel"/><br/>
+                number: <input type="number"/><br/>
+                url: <input type="url"/><br/>
+                date: <input type="date"/><br/>
+                time: <input type="time"/><br/>
+                datatime: <input type="datatime-local"/><br/>
+                file: <input type="file"/><br/>
+                range: <input type="range" min="0" max="100" name="range"/><br/>
+            </div>
+            <div>
+                <button>전송</button>
+                <input type="submit" id="전송"/>
+                <input type="reset" id="취소"/>
+            </div>
+        
+        </form>
+    </body>
+</html>

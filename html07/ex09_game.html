@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+
+    <style rel="stylesheet" type="text/css">
+        img {
+
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function() {
+
+            car = document.querySelector('img');
+            car.style.marginTop = '0px';
+            car.style.marginLeft = '0px';
+            /*margin을 0으로 둬서 초기에 이미지가 왼쪽위에 위치하도록함*/
+
+
+
+            window.onkeydown = function(e) {
+                var x = parseInt(car.style.marginLeft);
+                var y = parseInt(car.style.marginTop);
+
+                var limitX = 1000;
+                var limitY = 1000;
+
+                /*키보드 화살표 코드값 37~40 */
+                if (e.keyCode == 40) { //밑으로
+                    if (y + 20 <= limitY)
+                        car.style.marginTop = y + 20 + 'px';
+                    /*이미지 위 마진이 늘어나서 이미지가 아래로 이동하는것처럼보임*/
+
+                } else if (e.keyCode == 38) { //위로
+                    if (y - 20 < 0) {
+                        /*이미지가 화면꼭대기에 닿으면 marginTop이 0이므로
+                                            y-20이 0보다 작으면 이미지가 화면위로 사라질 수 있기 때문에
+                                            y-20이 0보다 작으면 마진을 0으로 한다.*/
+                        car.style.marginTop = '0px';
+                    } else {
+                        car.style.marginTop = y - 20 + 'px';
+                    }
+
+                } else if (e.keyCode == 39) { //오른쪽
+                    if (x + 20 <= limitX)
+                        car.style.marginLeft = x + 20 + 'px';
+                } else if (e.keyCode == 37) { //왼쪽
+
+                    if (x - 20 < 0) {
+                        car.style.marginLeft = '0px';
+                    } else {
+                        car.style.marginLeft = x - 20 + 'px';
+                    }
+                }
+
+
+            };
+        }; //onload
+    </script>
+
+
+</head>
+
+<body>
+
+    <img src="img/rocket2.png" alt="">
+
+
+
+</body></html>

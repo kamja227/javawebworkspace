@@ -1,0 +1,9 @@
+package com.bit.controller.home;
+
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/find.bit")
+public class FindController extends HttpServlet {
+
+	
+}

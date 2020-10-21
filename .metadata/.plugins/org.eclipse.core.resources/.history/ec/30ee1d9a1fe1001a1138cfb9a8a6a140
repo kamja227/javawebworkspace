@@ -1,0 +1,39 @@
+package com.bit.controller;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.ArrayList;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.bit.model.AttendanceDao;
+import com.bit.model.AttendanceDto;
+
+@WebServlet("/admin/aattendanceclass.bit")
+public class AattendanceClassController extends HttpServlet {
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		int classIdx = Integer.parseInt(req.getParameter("classIdx"));
+		String classTitle = req.getParameter("classTitle");
+		String today = req.getParameter("today"); // 오늘 날짜 변수로 설정
+
+		AttendanceDao dao = new AttendanceDao();
+		ArrayList<AttendanceDto> list = dao.getClassAttendanceList(today, classIdx);
+		
+		req.setAttribute("classIdx", classIdx);
+		req.setAttribute("classTitle", classTitle);
+		req.setAttribute("list", list);
+		req.setAttribute("today", today);
+
+		req.getRequestDispatcher("../aattendanceclass.jsp").forward(req, resp);
+
+	}
+	
+}

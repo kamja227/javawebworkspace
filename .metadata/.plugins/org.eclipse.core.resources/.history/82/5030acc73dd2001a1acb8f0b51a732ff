@@ -1,0 +1,52 @@
+import java.util.Iterator;
+import java.util.Scanner;
+import java.util.TreeSet;
+
+public class LottoCollection {
+
+   public static void main(String[] args) {
+	   
+	   Scanner scan = new Scanner(System.in);
+	      System.out.print("게임수를 입력하세요 >> ");
+	      int gameCount =scan.nextInt();
+	      
+	      for(int i=0; i<gameCount; i++) {
+	    	  
+	    	  TreeSet<Integer> lotto = new TreeSet<Integer>();
+	    	  
+	    	  int ran = (int)(Math.random() * 45) + 1;
+	    	  lotto.add(ran);
+	    	  
+	    	  while(lotto.size() < 6) {
+	    		  Iterator iter = lotto.iterator();
+	    		  int ran = (int)(Math.random() * 45) + 1;
+	    		  System.out.println("random:" + ran);
+	    		  while(iter.hasNext()){
+	    			  if(ran == (int)iter.next()) {
+	    				  System.out.println("continue");
+	    				  continue;
+	    			  }
+	    			  if(!iter.hasNext()) {
+	    				  System.out.println("add");
+	    				  lotto.add(ran);
+	    			  }
+	    		  }
+	    	  }
+	    	  
+	    	  Iterator iter = lotto.iterator();
+	    	  System.out.print("로또 출력:");
+	    	  while(iter.hasNext()){
+	    		  System.out.print(iter.next());
+	    		  if(iter.hasNext()) System.out.print(", ");
+	    	  }
+	    	  System.out.println();
+	    	  
+	      }
+
+
+   }
+
+}
+/*  배열사용금지
+   예외처리 사용
+*/

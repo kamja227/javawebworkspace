@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style rel="stylesheet" type="text/css">
+        a{
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+            display: block;
+            
+            background-image: url(img/sampleImg.png);
+/*            background-size: 100%;*/
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-position: right;
+            transition-duration: 2s;
+            
+            
+        }
+        a:nth-child(1){
+            transition-timing-function: ease-in;
+        }
+        a:nth-child(2){
+            transition-timing-function: ease-out;
+        }
+        a:nth-child(3){
+            transition-timing-function: ease;
+        }
+        a:nth-child(4){
+            transition-delay: 1s;
+            transition-timing-function: ease-in;
+        }
+        a:hover{
+            color: red;
+            width: 500px;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <a href="#">item1</a>
+    <a href="#">item2</a>
+    <a href="#">item3</a>
+    <a href="#">item4</a>
+</body>
+
+</html>

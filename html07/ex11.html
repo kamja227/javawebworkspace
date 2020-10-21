@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+
+    <script type="text/javascript">
+        var cul, prev, next, menus;
+        var cnt = 0;
+
+        function cnext() {
+            cul.style.marginLeft = parseInt(cul.style.marginLeft) - 200 + 'px';
+            /*ul영역을 왼쪽으로 움직인다. 200px만큼씩*/
+
+        }
+
+        function cprev() {
+            cul.style.marginLeft = parseInt(cul.style.marginLeft) + 200 + 'px';
+                 /*ul영역을 오른쪽으로 움직인다. 200px만큼씩*/
+        }
+        
+        
+        var ols;
+        window.onload = function() {
+
+            menus = document.querySelectorAll('#menu>ul>li');
+            ols = document.querySelectorAll('#menu>ul>li>ol');
+            menus[0].onmouseover = function() {
+                var ol = document.querySelector('ol');
+                ols[0].style.display = 'block';//하위메뉴들의 li를 담고있는 ol
+                    //하위메뉴를 각각 가지고있어서
+                    //ol도 각각 지정해준다.
+                
+                return false;
+            }
+            /*메뉴에 li에 마우스가 위치하게 되면 diplay none에서 block으로 바뀌어서
+            안보이던 하위메뉴가 보이게 된다. */
+            menus[0].onmouseout = function() {
+//                var ol = document.querySelector('ol');
+                ols[0].style.display = 'none';
+                              /*li영역에서 마우스커서가 이탈하면 display가 none이되서
+                              하위메뉴가 안보이게됨*/
+                return false;
+            }
+
+
+            menus[1].onmouseover = function() {
+                var ol = document.querySelector('ol');
+                ols[1].style.display = 'block';
+                return false;
+            }
+
+            menus[1].onmouseout = function() {
+                var ol = document.querySelector('ol');
+                ols[1].style.display = 'none';
+                return false;
+            }
+
+
+            menus[2].onmouseover = function() {
+                var ol = document.querySelector('ol');
+                ols[2].style.display = 'block';
+                return false;
+            }
+
+            menus[2].onmouseout = function() {
+                var ol = document.querySelector('ol');
+                ols[2].style.display = 'none';
+                return false;
+            }
+
+
+            menus[3].onmouseover = function() {
+                var ol = document.querySelector('ol');
+                ols[3].style.display = 'block';
+                return false;
+            }
+
+            menus[3].onmouseout = function() {
+                var ol = document.querySelector('ol');
+                ols[3].style.display = 'none';
+                return false;
+            }
+
+
+            /*사진 이동. prev next버튼으로 사진 움직임*/
+            cul = document.querySelector('#content>div>ul');
+
+            cul.style.marginLeft = '-40px';/*ul의 처음위치 조정. 화면을 보고 상황에 맞게 설정한다*/
+            prev = document.querySelectorAll('#content>div>a')[0];
+            next = document.querySelectorAll('#content>div>a')[1];
+            /*컨텐츠아래 div아래에 a태그가 2개 있는데 selectorAll로 가져온다.*/
+            
+            next.onclick = function() {
+                //next에 마우스로 클릭하면 이벤트를 받아 함수 수행한다.
+                //marginLeft를 -200씩 누를때마다 ul영역이 왼쪽으로 움직여 가려진 이미지들이 나타남
+                //누를때마다 cnt는 증가 >> cnt x -200px가 ul에 있는 전체 이미지 길이보다 크면 안됨. 
+                if (cnt++ < 4) {
+                    cnext();
+                } else {
+                    cnt--;
+                }
+                return false;
+            }
+            prev.onclick = function() {
+                
+                if (cnt-- > 0) {
+                    cprev();
+                } else {
+                    cnt++;
+                }
+                return false;
+            }
+
+
+        } //onload
+    </script>
+
+
+    <style rel="stylesheet" type="text/css">
+        body {}
+
+        body>div {
+            width: 960px;
+            margin: 0px auto;
+            background-color: antiquewhite;
+        }
+
+        #header {}
+
+        #header>h1 {
+
+            background-image: url(img/sandbox.png);
+            text-indent: -999px;
+            background-size: 320px;
+            background-repeat: no-repeat;
+
+        }
+
+        #menu {
+            overflow: hidden;
+        }
+
+        #menu>ul {
+
+            text-align: center;
+            padding: 0px;
+            margin: 0px auto;
+            width: 410px;
+            overflow: hidden;
+        }
+
+        #menu>ul>li {
+            border: 1px solid chocolate;
+            display: block;
+            list-style: none;
+            width: 100px;
+            float: left;
+        }
+
+
+        #menu>ul>li>ol {
+            display: none;
+            padding: 10px;
+            overflow: hidden;
+          
+
+        }
+
+
+
+        #menu>ul>li>ol>li {
+            list-style: none;
+        
+
+        }
+
+        #menu>ul>li>ol>li>a {
+            text-align: center;
+            display: block;
+            border: 1px solid;
+            text-decoration: none;
+            color: black;
+            height: 32px;
+                
+
+        }
+
+
+
+
+        #menu>ul>li>a {
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+
+        #menu>ul>li>a:hover {
+            background-color: chocolate;
+            color: white;
+
+        }
+
+        #content {
+/*            border: 1px solid;*/
+            margin-top: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            background-color: antiquewhite;
+        }
+
+        #content>div {
+/*            border: 1px solid;*/
+            margin: auto;
+            /*            border: 1px solid;*/
+            width: 600px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        #content>div>a {
+            float: left;
+            text-decoration: none;
+            color: black;
+        }
+
+        #content>div>a {
+            position: relative;
+            top: -320px;
+            left: 0px;
+            background-color: chocolate;
+            height: 320px;
+            width: 50px;
+            display: inline-block;
+            opacity: 0.5;
+            line-height: 320px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        #content>div>a:last-child {
+            left: 500px;
+        }
+
+
+
+        #content>div>ul {
+            border: 1px solid;
+            margin: auto;
+            display: block;
+            overflow: hidden;
+            width: 1900px;
+            height: 200px;
+        }
+
+        #content>div>ul>li {
+            list-style: none;
+            float: left;
+            display: inline-block;
+            margin: 0px auto;
+        }
+
+        #footer {
+            text-align: center;
+            background-color: antiquewhite;
+            clear: both;
+        }
+    </style>
+
+
+
+    <script type="text/javascript">
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <div id="header">
+        <h1>비트교육센터</h1>
+
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="#">menu1</a>
+                <ol>
+                    <li><a href="">me1-1</a></li>
+                    <li><a href="">me1-2</a></li>
+                </ol>
+            </li>
+            <li><a href="#">menu2</a>
+                <ol>
+                    <li><a href="">me2-1</a></li>
+                    <li><a href="">me2-2</a></li>
+                    <li><a href="">me2-3</a></li>
+                    <li><a href="">me2-4</a></li>
+                </ol>
+
+            </li>
+            <li><a href="#">menu3</a>
+                <ol>
+                    <li><a href="">me3-1</a></li>
+                    <li><a href="">me3-2</a></li>
+                    <li><a href="">me3-3</a></li>
+                </ol>
+            </li>
+            <li><a href="#">menu4</a>
+
+                <ol>
+                    <li><a href="">me4-1</a></li>
+                    <li><a href="">me4-2</a></li>
+                    <li><a href="">me4-3</a></li>
+                    <li><a href="">me4-4</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <!--content Start-->
+        <div>
+
+            <ul>
+                <li><img src="img/samsek1.jpg" height="200" width="200" alt=""></li>
+                <li><img src="img/samsek2.jpg" height="200" width="200" alt=""></li>
+                <li><img src="img/samsek3.jpg" height="200" width="200" alt=""></li>
+                <li><img src="img/samsek4.jpg" height="200" width="200" alt=""></li>
+                <li><img src="img/samsek5.jpg" height="200" width="200" alt=""></li>
+                <li><img src="img/samsek.jpg" height="200" width="200" alt=""></li>
+                <li><img src="img/samsek3.jpg" height="200" width="200" alt=""></li>
+
+            </ul>
+            <a href="">prev</a>
+            <a href="">next</a>
+        </div>
+
+    </div>
+    <!--content End-->
+
+    <div id="footer">
+        Copyright &copy; bitcamp All rigths reserved.
+    </div>
+
+</body></html>

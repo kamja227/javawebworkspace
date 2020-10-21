@@ -1,0 +1,59 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<title>Insert title here</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet"/>
+    <link href="css/atemplate.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/butan.css">
+    <style rel="stylesheet" type="text/css">
+
+                 h2{
+                  width: 95px;
+                 }
+                 
+      .center>table {
+    width: 300px;
+    height:300px;
+    border: 1px solid black;
+      position: absolute;
+      top:30%;
+      left: 50%;
+      transform:translate(-50%, -50%);
+  
+  }
+  
+    </style>
+     <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	
+
+    
+</head>
+<%@ include file="template/myheader.jspf" %>
+<%@ include file="template/mymenu.jspf" %>
+<body>
+	<!--content start  -->
+<div class="center">
+ <h2>출결확인</h2>
+ <table class="table">
+ 	<tr class="row">
+ 	
+	<th class="thd">날짜</th>
+	<th class="thd">출석확인</th>
+ 	</tr>
+	<c:forEach items="${attendancelist}" var="bean"> 
+	<tr class="row">
+	    <td  class="tsub">${bean.attendDate}</td>
+	     <td  class="tsub">${bean.attendanceStatus}</td>
+	     </tr>
+	</c:forEach>
+    </table>
+</div>
+	<!--content end  -->
+  <%@ include file="template/myfooter.jspf" %>
+</body>
+</html>

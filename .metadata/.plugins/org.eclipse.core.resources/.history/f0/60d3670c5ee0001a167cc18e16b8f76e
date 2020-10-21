@@ -1,0 +1,97 @@
+package com.bit.model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.bit.Mysql.MysqlConnection;
+
+public class ApplicationDao {
+	private Connection conn;
+	private PreparedStatement pstmt;
+	private ResultSet rs;
+	
+	public List<ApplicationDto> getSelectAll() {
+		List<ApplicationDto> list= new ArrayList<ApplicationDto>();
+		try {
+			String sql="select *from Application where deleted=0";
+			
+			conn=MysqlConnection.getConnection();
+		    pstmt=conn.prepareStatement(sql);
+			rs=pstmt.executeQuery();
+			while (rs.next()) {
+				ApplicationDto bean= new ApplicationDto();
+				bean.setApplicationIdx(rs.getInt("applicationIdx"));
+				bean.setApplicantIdx(rs.getInt("applicantIdx"));
+				bean.setResumeIdx(rs.getInt("resumeIdx"));
+				bean.setEnrolledDate(rs.getDate("enrolledDate"));
+				list.add(bean);
+			}
+			
+		} catch (ClassNotFoundException e) {
+			
+			e.printStackTrace();
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}finally {
+			try {
+			
+				if(rs!=null)	rs.close();
+				if(pstmt!=null)	pstmt.close();
+				if(conn!=null)	conn.close();
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			}
+				
+		}
+		return list;
+	}
+	
+	public List<ApplicationDto> selectOne(){
+
+		ApplicationDto bean= new ApplicationDto();
+		try {
+			String sql="select application.*, student.name as studentName from Application "
+					+ "join Student on applicaton.applicantIdx = student.studentIdx "
+					+ "where student.deleted=0 application.deleted=0";
+			
+			conn=MysqlConnection.getConnection();
+		    pstmt=conn.prepareStatement(sql);
+			rs=pstmt.executeQuery();
+			if (rs.next()) {
+				bean= new ApplicationDto();
+				bean.setApplicationIdx(rs.getInt("applicationIdx"));
+				bean.setApplicantIdx(rs.getInt("applicantIdx"));
+				bean.setResumeIdx(rs.getInt("resumeIdx"));
+				bean.setEnrolledDate(rs.getDate("enrolledDate"));
+				bean.setStudentName(rs.getString("studentName"));
+				
+			}
+			
+		} catch (ClassNotFoundException e) {
+			
+			e.printStackTrace();
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}finally {
+			try {
+			
+				if(rs!=null)	rs.close();
+				if(pstmt!=null)	pstmt.close();
+				if(conn!=null)	conn.close();
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			}
+			
+			
+		}
+
+		return bean;
+	}

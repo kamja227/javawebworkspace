@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+</head>
+
+<body>
+    <h1>캐러셀</h1>
+    <button  onclick="next();">next</button><!--dom level 1-->
+    <!--이벤트처리 버튼에 클릭이벤트가 발생하면 next함수를 수행하도록함-->
+    <button id="btn">다음사진</button>
+    
+    <p>캐러셀은 이미지 로테이터, 슬라이더 등 다양한 이름으로 부린다. 케러셀은
+        메인페이지에서 마케팅 정보를 보여주는 한 가지 방법.<br /> 유저가 스크롤을 내리지않고도 볼 수 있는 정보의 양을 극대화하기 위해 디자이너들이 사용한다. </p>
+    <div>
+        
+    </div>
+    <img />
+
+    <script type="text/javascript">
+        var cnt = 1;
+        //        img.outerHTML='<img src="img/11.png"/>';
+
+        next();
+        
+        var btn = document.querySelector('#btn');
+        btn.onclick=next;/*dom level2 이벤트처리방법*/
+
+
+        function next() {
+
+            if (cnt++ == 5) cnt = 1;
+            var img = document.querySelector('img');
+            img.outerHTML = '<img src="img/samsek' + cnt + '.jpg"/>';
+        }
+        /*
+        콘솔에서 next(); 입력하면 outerHTML의 cnt가 증가하면서 사진이 차례대로 로딩된다.
+        */
+    </script>
+</body></html>

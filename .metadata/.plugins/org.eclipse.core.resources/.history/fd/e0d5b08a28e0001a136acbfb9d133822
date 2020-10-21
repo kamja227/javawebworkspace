@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.bit.model.EmployeeDao" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/EmployeeDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="295" x="297" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.bit.model.ClassRoomDto" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/ClassRoomDto.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="138" x="632" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.bit.model.AttendanceDto" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/AttendanceDto.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="459" width="201" x="810" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.bit.model.GradeDao" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/GradeDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="185" x="1051" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.bit.model.StudentDto" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/StudentDto.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="693" width="312" x="1276" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.bit.model.ClassDto" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/ClassDto.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="855" width="315" x="1628" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.bit.model.ClassRoomDao" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/ClassRoomDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="205" x="1983" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.bit.model.EmployeeDto" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/EmployeeDto.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="693" width="335" x="2228" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.bit.model.ResumeDao" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/ResumeDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="215" x="2603" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.bit.model.StudentDao" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/StudentDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="351" width="295" x="2868" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.bit.model.ClassDao" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/ClassDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="311" x="3203" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.bit.model.RecruitmentBoardDto" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/RecruitmentBoardDto.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="513" width="234" x="3554" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.bit.model.AttendanceDao" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/AttendanceDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="323" x="3828" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.bit.model.ApplicationDto" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/ApplicationDto.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="405" width="154" x="4191" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.bit.model.GradeDto" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/GradeDto.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="441" width="178" x="4385" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.bit.model.ResumeDto" project="LMSsystem" 
+    file="/LMSsystem/src/com/bit/model/ResumeDto.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="459" width="176" x="4603" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="17">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="18" name="instance"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+<script type="text/javascript">
+    var obj={'key1':'val1', 'key2':[], 'key3':function(){}};
+    console.log(obj);
+    var su1=Math.random(); // 0<=random<1
+    su1=Math.abs(-1234); // 절대값
+    su1=Math.round(3.14); // 반올림
+    su1=Math.floor(3.54); // 버림
+    su1=Math.ceil(3.15); // 올림
+    su1=Math.max(3,4);
+    console.log(su1);
+    ///////////////////////////////////////
+    var a= new Date(2002,1,1,13,30);
+    console.log(a.getFullYear()+'년');
+    console.log(a.getMonth()+'월');
+    console.log(a.getDate()+'일');
+    console.log(a.getHours()+'시');
+    console.log(a.getMinutes()+'분');
+    console.log(a.getSeconds()+'초');
+    console.log(a.getTime());
+    ////////////////////////////////////////
+    /*
+        객체를 string으로 받아 str에 저장
+        str을 JSON(javascript object notation)으로 방으면 obj타입으로 obj에 저장됨
+        str2에 JSON.stringify(obj)로 받으면 str2에 다시 str타입으로 옴
+    */
+    var str='{"key1":"value1"}'; 
+    var obj=JSON.parse(str);
+    console.log(obj,typeof obj); // {key1: "value1"} "object"
+    var str2=JSON.stringify(obj);  
+    console.log(str2,typeof str2);
+    
+</script>
+</head>
+
+	<body>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+package com.bit.controller.admimPage;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.bit.model.dao.ClassDao;
+import com.bit.model.dao.StudentDao;
+import com.bit.model.dto.ClassDto;
+import com.bit.model.dto.StudentDto;
+
+@WebServlet("/admin/astudentlist.bit")
+public class AstudentListController extends HttpServlet {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		StudentDao studentDao;
+		try {
+			studentDao = new StudentDao();
+			List<StudentDto> bean = studentDao.selectAll();
+			List<String> classbean = new ArrayList<String>();
+			
+			for(StudentDto studentDto : bean){
+				ClassDao classDao = new ClassDao();
+				ClassDto classDto=classDao.selectOne(studentDto.getClassIdx());
+				classbean.add(classDto.getClassTitle());
+			}
+			request.setAttribute("title", classbean);
+			request.setAttribute("student", bean);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		request.getRequestDispatcher("../astudentlist.jsp").forward(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	}
+
+}

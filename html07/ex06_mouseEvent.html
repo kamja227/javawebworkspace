@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <script type="text/javascript">
+        window.onload = function() {
+            /*스크립트는 페이지가 로딩될때 작동.*/
+            var btn = document.querySelector('#btn');
+            btn.onclick = function() {
+
+                console.log('클릭');
+            };
+
+            btn.ondblclick = function() {
+                console.log('더블클릭');
+            };
+
+            btn.onmousedown = function() {
+                console.log('다운');
+/*버튼이 눌릴때 pressed 버튼이 내려감. 다운되면 수행*/
+            };
+
+            btn.onmouseup = function() {
+                console.log('업');
+            };
+/*java mouse event release랑 같다.  업되면 수행*/
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <h1>mouse event</h1>
+    <button id="btn">click</button>
+
+</body></html>

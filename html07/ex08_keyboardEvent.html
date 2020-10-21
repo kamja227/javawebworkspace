@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+
+    <script type="text/javascript">
+        onload = function() {
+            input = document.querySelector('input');
+
+
+
+            input.onkeypress = function(e) {
+                console.log('key press = '+input.value); /*shift나 esc처럼 문자가 입력되지 않는 것에는 반응하지 않음*/
+                 console.log(e);/*event정보*/
+            };
+            input.onkeydown = function(e) {
+                console.log('key down = '+input.value); /*pressed*/
+                console.log(e);
+            };
+            input.onkeyup = function(e) {
+                console.log('key up = '+input.value); /*released*/
+                 console.log(e);
+            };
+  
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>key event</h1>
+
+    <input type="text" />
+
+</body></html>

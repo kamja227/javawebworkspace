@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style rel="stylesheet" type="text/css">
+        div{
+            height: 400px;
+            border-bottom: 1px solid gray; 
+        }
+        div>span{
+            display: inline-block;
+            margin-top: 0px;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            background-image: url(img/ball.jpg);
+            background-repeat: no-repeat;
+            background-size: 100px;
+            animation-name: ani1;
+            animation-duration: 1s; /*필수*/
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: paused;
+        }
+        @keyframes ani1{
+            from {
+                margin-top: 300px;
+                transform: rotate(0deg);
+                transform: scale(2);
+                
+                
+            }
+            to {
+                margin-top: 0px;
+                transform: rotate(360deg);
+            
+            
+            }
+        }
+    
+    </style>
+        
+</head>
+<body>
+    <div>
+        <span></span>     
+    </div>
+    
+</body>
+</html>
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+</head>
+<body>
+    <h1>리스트</h1>
+    <ul>
+        <li>item1</li> 
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <button onclick="func()">add</button>
+
+<script type="text/javascript">
+    var cnt=5;
+var ul=document.firstElementChild.lastElementChild.lastElementChild.previousElementSibling;
+    function func(){
+        var item5=document.createElement('li');
+        var msg=document.createTextNode('item' + cnt++);
+        item5.appendChild(msg);
+        ul.appendChild(item5);
+    }
+</script>
+
+</body>
+</html>
+    
+   
+<!--
+html
+    head
+    body
+        h1
+        ul
+            li
+            li
+            li
+        button
+    script
+    
+
+
+-->
